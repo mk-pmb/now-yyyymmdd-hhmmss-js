@@ -1,0 +1,28 @@
+{ "name": "now-yyyymmdd-hhmmss",
+  "version": "0.1.0",
+  "description": "Return current date as string in format `yyyyMMDD-hhmmss`.",
+  "keywords": [
+    "date",
+    "yyyymmdd-hhmmss"
+  ],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/now-yyyymmdd-hhmmss-js/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/now-yyyymmdd-hhmmss-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/now-yyyymmdd-hhmmss-js/issues"
+  },
+  "contributors": [],
+
+  "private": false, "license": "ISC",
+
+  "main": "nowfmt.js",
+  "scripts": { "test": "nodejs test/basics.js" },
+  "directories": { "test": "test" },
+
+
+  "engines": { "npm": ">=7.0.0", "node": ">=16.0.0" }
+}
