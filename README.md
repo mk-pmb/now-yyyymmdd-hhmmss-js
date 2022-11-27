@@ -5,7 +5,7 @@ now-yyyymmdd-hhmmss
 <!--/#echo -->
 
 <!--#echo json="package.json" key="description" -->
-Return current date as string in format `yyyyMMdd-hhmmss`.
+Return current date as string in format `yyyyMMdd-HHmmss`.
 <!--/#echo -->
 
 
@@ -18,7 +18,7 @@ This module exports one function which holds another function:
 ### nowFmt()
 
 <!--#echo json="package.json" key="description" -->
-Return current date as string in format `yyyyMMdd-hhmmss`.
+Return current date as string in format `yyyyMMdd-HHmmss`.
 <!--/#echo -->
 
 
