@@ -1,5 +1,5 @@
 { "name": "now-yyyymmdd-hhmmss",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Return current date as string in format `yyyyMMdd-HHmmss`.",
   "keywords": [
     "date",

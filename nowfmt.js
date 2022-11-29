@@ -6,19 +6,25 @@ module.exports = (function setup(y) {
 
   const EX = function nowfmt() { return nowfmt.custom({ sep: '-' }); };
 
-  EX.custom = function customNowFmt(opt) {
+  EX.parts = function dateTime() {
+    const p = {};
     const n = new Date();
-    const d = String(1e8
+    p.d = String(1e8
       + (n.getFullYear() * 1e4)
       + ((n.getMonth() + 1) * 1e2)
       + n.getDate()
       ).slice(1);
-    const t = String(1e6
+    p.t = String(1e6
       + (n.getHours() * 1e4)
       + (n.getMinutes() * 1e2)
       + n.getSeconds()
       ).slice(1);
-    return d + opt.sep + t;
+    return p;
+  };
+
+  EX.custom = function customNowFmt(opt) {
+    const p = EX.parts();
+    return p.d + opt.sep + p.t;
   };
 
   return EX;
